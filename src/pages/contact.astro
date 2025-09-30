@@ -1,0 +1,331 @@
+---
+// src/pages/contact.astro
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Contact Public Works Digital to discuss how we can help transform your city's technology with open source solutions." />
+    <title>Contact - Public Works Digital</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="nav-content">
+        <a href="/" class="logo">Public Works Digital</a>
+        <div class="nav-links">
+          <a href="/about">About</a>
+          <a href="/projects">Projects</a>
+          <a href="/contact" class="active">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-small">
+        <div class="hero-content">
+          <h1>Let's Build Together</h1>
+          <p class="subtitle">Ready to transform your city's technology?</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-content">
+          <div class="contact-intro">
+            <p>
+              We'd love to hear from you. Whether you're a city official exploring better technology 
+              solutions, a developer interested in civic tech, or a citizen with questions about 
+              transparent government technology—reach out and let's start a conversation.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Get in Touch</h2>
+            
+            <div class="contact-method">
+              <h3>Email Us</h3>
+              <a href="mailto:info@publicworks.digital" class="contact-link">
+                info@publicworks.digital
+              </a>
+              <p class="contact-description">
+                For general inquiries, project discussions, or to schedule a consultation
+              </p>
+            </div>
+
+            <div class="contact-types">
+              <h3>We're Here to Help With:</h3>
+              <ul>
+                <li>Municipal software development projects</li>
+                <li>Transitioning from vendor lock-in to open source</li>
+                <li>Building transparent citizen engagement platforms</li>
+                <li>Modernizing legacy government systems</li>
+                <li>Creating sustainable technology strategies</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="response-note">
+            <p>
+              <strong>We typically respond within one business day.</strong> When you reach out, 
+              please let us know a bit about your organization and what challenges you're facing. 
+              The more context you provide, the better we can tailor our response to your needs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Public Works Digital. Building civic technology in the public interest.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary: #1e40af;
+    --primary-dark: #1e3a8a;
+    --secondary: #059669;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    --max-width: 1200px;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-800);
+  }
+
+  /* Navigation */
+  .nav-container {
+    background: white;
+    border-bottom: 1px solid var(--gray-200);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--primary);
+  }
+
+  /* Hero */
+  .hero-small {
+    background: var(--gray-50);
+    padding: 4rem 2rem;
+  }
+
+  .hero-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--gray-600);
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+
+  .contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .contact-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-intro p {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    line-height: 1.75;
+  }
+
+  /* Contact Card */
+  .contact-card {
+    background: var(--gray-50);
+    padding: 3rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact-card h2 {
+    font-size: 2rem;
+    color: var(--gray-900);
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-method {
+    margin-bottom: 3rem;
+  }
+
+  .contact-method h3 {
+    font-size: 1.25rem;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+  }
+
+  .contact-link {
+    font-size: 1.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .contact-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+
+  .contact-description {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-top: 0.5rem;
+  }
+
+  /* Contact Types */
+  .contact-types {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .contact-types h3 {
+    font-size: 1.125rem;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contact-types ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-types li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--gray-600);
+  }
+
+  .contact-types li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  /* Response Note */
+  .response-note {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .response-note p {
+    font-size: 0.9375rem;
+    color: var(--gray-700);
+    margin: 0;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--gray-100);
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  .footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--gray-600);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .contact-card {
+      padding: 2rem;
+    }
+
+    .contact-link {
+      font-size: 1.25rem;
+    }
+
+    .hero-small {
+      padding: 3rem 1.5rem;
+    }
+  }
+</style>
