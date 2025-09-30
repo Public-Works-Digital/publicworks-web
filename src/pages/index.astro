@@ -1,183 +1,92 @@
 ---
-// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Public Works Digital - Building transparent, open-source software for government. We create civic technology that serves the public interest." />
-    <title>Public Works Digital - Open Source Government Technology</title>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-content">
-        <a href="/" class="logo">Public Works Digital</a>
-        <div class="nav-links">
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-        </div>
+<BaseLayout
+  title="Public Works Digital - Open Source Government Technology"
+  description="Public Works Digital - Building transparent, open-source software for government. We create civic technology that serves the public interest."
+>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Government software built in the open</h1>
+      <p class="hero-subtitle">
+        We build transparent, accountable technology for cities and their citizens.
+        No vendor lock-in. No black boxes. Just honest, open-source software that serves the public good.
+      </p>
+      <div class="hero-actions">
+        <a href="/about" class="btn btn-primary">Learn More</a>
+        <a href="/projects" class="btn btn-secondary">View Our Work</a>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Government software built in the open</h1>
-          <p class="hero-subtitle">
-            We build transparent, accountable technology for cities and their citizens. 
-            No vendor lock-in. No black boxes. Just honest, open-source software that serves the public good.
-          </p>
-          <div class="hero-actions">
-            <a href="/about" class="btn btn-primary">Learn More</a>
-            <a href="/projects" class="btn btn-secondary">View Our Work</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="features">
-        <div class="features-content">
-          <h2>A new model for civic technology</h2>
-          <div class="feature-grid">
-            <div class="feature">
-              <h3>Open Source by Default</h3>
-              <p>
-                Every line of code we write is public. Citizens can inspect, verify, and contribute 
-                to the software that governs their daily lives. No secrets, no surprises.
-              </p>
-            </div>
-            <div class="feature">
-              <h3>Professional Support</h3>
-              <p>
-                Enterprise-grade reliability with dedicated support, training, and maintenance. 
-                We're not just developers—we're partners in your digital transformation.
-              </p>
-            </div>
-            <div class="feature">
-              <h3>True Ownership</h3>
-              <p>
-                Your city owns the code. Forever. Switch vendors, self-host, or modify as needed. 
-                We eliminate vendor lock-in and put control back in public hands.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="problem">
-        <div class="problem-content">
-          <h2>The crisis in government technology</h2>
-          <div class="stats">
-            <div class="stat">
-              <span class="stat-number">$521B</span>
-              <span class="stat-label">Annual government procurement waste</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">78%</span>
-              <span class="stat-label">Potential cost savings with open source</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">Zero</span>
-              <span class="stat-label">Citizens who can audit proprietary systems</span>
-            </div>
-          </div>
-          <p class="problem-text">
-            Cities are trapped by vendors who charge extortionate fees, deliver broken systems, 
-            and disappear when problems arise. Meanwhile, citizens have no visibility into the 
-            technology making decisions about their lives. <strong>It's time for a change.</strong>
-          </p>
-        </div>
-      </section>
-
-      <section class="cta">
-        <div class="cta-content">
-          <h2>Ready to transform your city's technology?</h2>
+  <section class="features">
+    <div class="features-content">
+      <h2>A new model for civic technology</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Open Source by Default</h3>
           <p>
-            Join forward-thinking municipalities building transparent, accountable government 
-            for the 21st century.
+            Every line of code we write is public. Citizens can inspect, verify, and contribute
+            to the software that governs their daily lives. No secrets, no surprises.
           </p>
-          <a href="/contact" class="btn btn-primary">Start the Conversation</a>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Public Works Digital. Building civic technology in the public interest.</p>
+        <div class="feature">
+          <h3>Professional Support</h3>
+          <p>
+            Enterprise-grade reliability with dedicated support, training, and maintenance.
+            We're not just developers—we're partners in your digital transformation.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>True Ownership</h3>
+          <p>
+            Your city owns the code. Forever. Switch vendors, self-host, or modify as needed.
+            We eliminate vendor lock-in and put control back in public hands.
+          </p>
+        </div>
       </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="problem-content">
+      <h2>The crisis in government technology</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">$521B</span>
+          <span class="stat-label">Annual government procurement waste</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">78%</span>
+          <span class="stat-label">Potential cost savings with open source</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">Zero</span>
+          <span class="stat-label">Citizens who can audit proprietary systems</span>
+        </div>
+      </div>
+      <p class="problem-text">
+        Cities are trapped by vendors who charge extortionate fees, deliver broken systems,
+        and disappear when problems arise. Meanwhile, citizens have no visibility into the
+        technology making decisions about their lives. <strong>It's time for a change.</strong>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Ready to transform your city's technology?</h2>
+      <p>
+        Join forward-thinking municipalities building transparent, accountable government
+        for the 21st century.
+      </p>
+      <a href="/contact" class="btn btn-primary">Start the Conversation</a>
+    </div>
+  </section>
+</BaseLayout>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  :root {
-    --primary: #1e40af;
-    --primary-dark: #1e3a8a;
-    --secondary: #059669;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-600: #4b5563;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --max-width: 1200px;
-  }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--gray-800);
-  }
-
-  /* Navigation */
-  .nav-container {
-    background: white;
-    border-bottom: 1px solid var(--gray-200);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  .nav-content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .nav-links a {
-    color: var(--gray-600);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover {
-    color: var(--primary);
-  }
-
   /* Hero Section */
   .hero {
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
@@ -209,35 +118,6 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-  }
-
-  .btn {
-    padding: 0.875rem 2rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 0.375rem;
-    transition: all 0.2s;
-    display: inline-block;
-  }
-
-  .btn-primary {
-    background: var(--primary);
-    color: white;
-  }
-
-  .btn-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-1px);
-  }
-
-  .btn-secondary {
-    background: white;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-  }
-
-  .btn-secondary:hover {
-    background: var(--gray-50);
   }
 
   /* Features Section */
@@ -348,19 +228,6 @@
     color: var(--gray-200);
   }
 
-  /* Footer */
-  footer {
-    background: var(--gray-100);
-    padding: 2rem;
-  }
-
-  .footer-content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    text-align: center;
-    color: var(--gray-600);
-  }
-
   /* Responsive */
   @media (max-width: 768px) {
     h1 {
@@ -374,10 +241,6 @@
     .hero-actions {
       flex-direction: column;
       align-items: center;
-    }
-
-    .nav-links {
-      gap: 1rem;
     }
 
     .stats {

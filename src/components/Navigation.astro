@@ -1,0 +1,17 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath } = Astro.props;
+---
+
+<nav class="nav-container">
+  <div class="nav-content">
+    <a href="/" class="logo">Public Works Digital</a>
+    <div class="nav-links">
+      <a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a>
+      <a href="/contact" class={currentPath === '/contact' ? 'active' : ''}>Contact</a>
+    </div>
+  </div>
+</nav>

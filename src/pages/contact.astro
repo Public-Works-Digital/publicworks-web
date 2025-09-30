@@ -1,159 +1,65 @@
 ---
-// src/pages/contact.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Contact Public Works Digital to discuss how we can help transform your city's technology with open source solutions." />
-    <title>Contact - Public Works Digital</title>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-content">
-        <a href="/" class="logo">Public Works Digital</a>
-        <div class="nav-links">
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact" class="active">Contact</a>
+<BaseLayout
+  title="Contact - Public Works Digital"
+  description="Contact Public Works Digital to discuss how we can help transform your city's technology with open source solutions."
+>
+  <section class="hero-small">
+    <div class="hero-content">
+      <h1>Let's Build Together</h1>
+      <p class="subtitle">Ready to transform your city's technology?</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-content">
+      <div class="contact-intro">
+        <p>
+          We'd love to hear from you. Whether you're a city official exploring better technology
+          solutions, a developer interested in civic tech, or a citizen with questions about
+          transparent government technology—reach out and let's start a conversation.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-method">
+          <h3>Email Us</h3>
+          <a href="mailto:info@publicworks.digital" class="contact-link">
+            info@publicworks.digital
+          </a>
+          <p class="contact-description">
+            For general inquiries, project discussions, or to schedule a consultation
+          </p>
+        </div>
+
+        <div class="contact-types">
+          <h3>We're Here to Help With:</h3>
+          <ul>
+            <li>Municipal software development projects</li>
+            <li>Transitioning from vendor lock-in to open source</li>
+            <li>Building transparent citizen engagement platforms</li>
+            <li>Modernizing legacy government systems</li>
+            <li>Creating sustainable technology strategies</li>
+          </ul>
         </div>
       </div>
-    </nav>
 
-    <main>
-      <section class="hero-small">
-        <div class="hero-content">
-          <h1>Let's Build Together</h1>
-          <p class="subtitle">Ready to transform your city's technology?</p>
-        </div>
-      </section>
-
-      <section class="contact-section">
-        <div class="contact-content">
-          <div class="contact-intro">
-            <p>
-              We'd love to hear from you. Whether you're a city official exploring better technology 
-              solutions, a developer interested in civic tech, or a citizen with questions about 
-              transparent government technology—reach out and let's start a conversation.
-            </p>
-          </div>
-
-          <div class="contact-card">
-            <h2>Get in Touch</h2>
-            
-            <div class="contact-method">
-              <h3>Email Us</h3>
-              <a href="mailto:info@publicworks.digital" class="contact-link">
-                info@publicworks.digital
-              </a>
-              <p class="contact-description">
-                For general inquiries, project discussions, or to schedule a consultation
-              </p>
-            </div>
-
-            <div class="contact-types">
-              <h3>We're Here to Help With:</h3>
-              <ul>
-                <li>Municipal software development projects</li>
-                <li>Transitioning from vendor lock-in to open source</li>
-                <li>Building transparent citizen engagement platforms</li>
-                <li>Modernizing legacy government systems</li>
-                <li>Creating sustainable technology strategies</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="response-note">
-            <p>
-              <strong>We typically respond within one business day.</strong> When you reach out, 
-              please let us know a bit about your organization and what challenges you're facing. 
-              The more context you provide, the better we can tailor our response to your needs.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Public Works Digital. Building civic technology in the public interest.</p>
+      <div class="response-note">
+        <p>
+          <strong>We typically respond within one business day.</strong> When you reach out,
+          please let us know a bit about your organization and what challenges you're facing.
+          The more context you provide, the better we can tailor our response to your needs.
+        </p>
       </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </section>
+</BaseLayout>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  :root {
-    --primary: #1e40af;
-    --primary-dark: #1e3a8a;
-    --secondary: #059669;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --max-width: 1200px;
-  }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--gray-800);
-  }
-
-  /* Navigation */
-  .nav-container {
-    background: white;
-    border-bottom: 1px solid var(--gray-200);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-
-  .nav-content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .nav-links a {
-    color: var(--gray-600);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: var(--primary);
-  }
-
   /* Hero */
   .hero-small {
     background: var(--gray-50);
@@ -292,28 +198,10 @@
     margin: 0;
   }
 
-  /* Footer */
-  footer {
-    background: var(--gray-100);
-    padding: 2rem;
-    margin-top: 4rem;
-  }
-
-  .footer-content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    text-align: center;
-    color: var(--gray-600);
-  }
-
   /* Responsive */
   @media (max-width: 768px) {
     h1 {
       font-size: 2.25rem;
-    }
-
-    .nav-links {
-      gap: 1rem;
     }
 
     .contact-card {
